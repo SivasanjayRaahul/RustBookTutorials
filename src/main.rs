@@ -1,8 +1,9 @@
 mod guessing_game;
 // mod reference;
-
+// mod enums;
 fn main() {
     println!("Hello, world!");
-    // reference::main();
     // guessing_game::main();
+    // reference::main();
+    // enums::main();
 }
