@@ -2,13 +2,14 @@ use std::io;
 use rand::Rng;
 use std::cmp::Ordering;
 
-fn main() {
+pub fn main() {
     println!("Welcome to the Guessing Game");
+    let secret_number = rand::thread_rng().gen_range(1..=100);
+
     loop {
         println!("Enter your guess");
 
         let mut guess = String::new();
-        let secret_number = rand::thread_rng().gen_range(1..=100);
 
         io::stdin().read_line(&mut guess).expect("Invalid number");
 
@@ -16,7 +17,7 @@ fn main() {
             Ok(num) => num,
             Err(_) => continue,
         };
-        print!("The guess is {}", guess);
+        println!("The guess is {}", guess);
 
         /*
             print! and println! are macros
