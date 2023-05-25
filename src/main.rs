@@ -1,10 +1,11 @@
 mod garden;
 mod guessing_game;
-mod generics;
 use garden::vegetable::backyard::Vegetable;
 
 // mod reference;
 // mod enums;
+// mod generics;
+// mod traits;
 fn main() {
     println!("Hello, world!");
     // guessing_game::main();
@@ -13,7 +14,8 @@ fn main() {
 
     garden::front_yard::front_yard_two::lk();
 
-    generics::main();
+    // generics::main();
+    // traits::main();
 }
 
 fn create_vegetable() {
