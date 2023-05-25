@@ -1,5 +1,6 @@
 mod garden;
 mod guessing_game;
+mod generics;
 use garden::vegetable::backyard::Vegetable;
 
 // mod reference;
@@ -10,8 +11,9 @@ fn main() {
     // reference::main();
     // enums::main();
 
-
     garden::front_yard::front_yard_two::lk();
+
+    generics::main();
 }
 
 fn create_vegetable() {
