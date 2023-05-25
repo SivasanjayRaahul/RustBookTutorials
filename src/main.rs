@@ -1,4 +1,7 @@
+mod garden;
 mod guessing_game;
+use garden::vegetable::backyard::Vegetable;
+
 // mod reference;
 // mod enums;
 fn main() {
@@ -6,4 +9,19 @@ fn main() {
     // guessing_game::main();
     // reference::main();
     // enums::main();
+
+
+    garden::front_yard::front_yard_two::lk();
 }
+
+fn create_vegetable() {
+    garden::vegetable::backyard::Vegetable{
+        name: String::from("Carrot"),
+        family_type: String::from("Root"),
+    };
+    let beetroot = Vegetable {
+        name: String::from("Beetroot"),
+        family_type: String::from("Root"),
+    };
+}
+
